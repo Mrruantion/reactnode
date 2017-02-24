@@ -2,7 +2,7 @@ import './like.css';
 import React from 'react';
 import fetchJsonp from 'fetch-jsonp';
 
-let Like = React.creatClass({
+let Like = React.createClass({
     getInitialState: function(){
         return {
             stores: [],

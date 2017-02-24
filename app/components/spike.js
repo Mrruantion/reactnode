@@ -66,8 +66,8 @@ let Spike = React.createClass({
         getData().then((times) => {
             times = +times;
             let timer = window.setInterval(() => {
-                let {hour, minutes, second } = this.formatTime(time--);
-                if(time == -1) {
+                let {hour, minutes, second } = this.formatTime(times--);
+                if(times == -1) {
                     clearInterval(timer);
                     timer = null;
                 }

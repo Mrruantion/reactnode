@@ -6,8 +6,9 @@
     box-sizing: border-box;
     padding: 5px 20px;
     z-index: 10;
-    background-color: rgba(234, 44, 44, 0.81);
+    /*background-color: rgba(234, 44, 44, 0.81);*/
     background-color: rgba(234, 44, 44, 0);
+    opacity: 1;
 }
 
 .search {
@@ -28,7 +29,7 @@
     width: 56px;
     height: 21px;
     display: inline-block;
-    background: url('./images/jd-sprites.png') no-repeat;
+    background: url('../images/jd-sprites.png') no-repeat;
     background-size: 200px 200px;
     background-position: 0 -109px;
 }

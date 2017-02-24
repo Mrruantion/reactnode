@@ -8,9 +8,9 @@ class More extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            more1 = [],
-            more2 = [],
-            more3 = []
+            more1: [],
+            more2: [],
+            more3: []
         }
     }
     

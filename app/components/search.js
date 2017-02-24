@@ -1,5 +1,5 @@
-import './search.css'
-import React from 'react'
+import './search.css';
+import React from 'react'; 
 
 let Search = React.createClass({
     getInitialState: function(){

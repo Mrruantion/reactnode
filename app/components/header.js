@@ -17,11 +17,11 @@ let Header = React.createClass({
             if(data.status) {
                 if(this.isMounted()) {
                     this.setState({
-                        imgUrl: data.data,
+                        imgUrls: data.data,
                     })
                     new Swiper('#header .swiper-container', {
                         loop: true,
-                        pagination: 'swiper-pagination',
+                        pagination: '.swiper-pagination',
                         paginationClickable: true,
                         autoplay: 3000,
                         autoplayDisableOnInteraction: false,
@@ -40,7 +40,7 @@ let Header = React.createClass({
                     <div className="swiper-wrapper">
                         {
                             this.state.imgUrls.map((url) => {
-                            return <div className="swiper-slider" key={"header" + countId++} >
+                            return <div className="swiper-slide" key={"header" + countId++} >
                                         <img className="img" src={url} />
                                     </div>
                             })
